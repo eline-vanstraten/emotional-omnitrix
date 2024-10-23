@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet"
+        href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Startpagina</a>
+        <a href="#description">Uitgebreide omschrijving</a>
+        <a href="instruction.html">Instructies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header class="contact-page">
+        <h1 class="special-font">Contact</h1>
+        <p class="contact-intro">
+            Heb je nog vragen over het device of wil je graag iets kwijt vul dan het formulier hieronder in.
+        </p>
+    </header>
+    <main class="form-container">
+        <div class="center-container">
+            <section>
+                <h2 class="special-font">Form</h2>
+            </section>
+            <form>
+                <div class="full-name">
+                    <div class="first-name">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Voornaam" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Achternaam</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Achternaam" required>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="living-birth">
+                    <div class="livingplace">
+                        <label for="livingplace">Woonplaats</label>
+                        <input type="text" name="livingplace" id="livingplace" placeholder="Woonplaats" required>
+                    </div>
+                    <div class="birthdate">
+                        <label for="birthdate">Geboortedatum</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                    </div>
+                </div>
+                <div class="subject">
+                    <label for="subject">Onderwerp</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Kies onderwerp van het bericht...</option>
+                        <option value="0">Vraag over het device</option>
+                        <option value="1">Vraag over organisatie</option>
+                        <option value="2">Anders</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" placeholder="Vul in" required></textarea>
+                </div>
+                <div class="sign-up">
+                    <label for="sign-up">Inschrijven voor nieuwsbrief?</label>
+                    <div class="yes-no">
+                        <label>
+                            <input type="radio" id="yes" name="newsletter" value="Yes" checked>
+                            Ja
+                        </label>
+                        <label>
+                            <input type="radio" id="no" name="newsletter" value="No" required>
+                            Nee
+                        </label>
+                    </div>
+                </div>
+                <div class="policies">
+                    <label>
+                        <input type="checkbox" id="policies" name="policies" value="policies" required>
+                        Ik ga akkoord met de algemene voorwaarden
+                    </label>
+                </div>
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&#169; Copyright 2024</p>
+            <div class="icons">
+                <img src="images/instagram.png" alt="instagram icoon">
+                <img src="images/youtube.png" alt="youtube icoon">
+                <img src="images/tiktok.png" alt="tiktok icoon">
+            </div>
+        </div>
+        <p class="empty-element"></p>
+        <div clas="right-column">
+            <a href="#">Privacyverklaring</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookiebeleid</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>
